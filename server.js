@@ -31,6 +31,15 @@ displayTitle();
 
 
 
+app.use((req, res) => {
+    res.status(404).end();
+})
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+
+
 // connect to sql
 // define questions
 // handle user input
