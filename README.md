@@ -12,11 +12,11 @@
     <a href="https://github.com/topcowmoo/fluffy-disco-note-taker"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://pacific-basin-11264-4d339f96ea1b.herokuapp.com/">Link to Deployed app on Heroku</a>
+    <!-- <a href="https://pacific-basin-11264-4d339f96ea1b.herokuapp.com/">Link to Deployed app on Heroku</a> -->
     ·
-    <a href="https://github.com/topcowmoo/fluffy-disco-note-taker/issues">Report Bug</a>
+    <a href="https://github.com/topcowmoo/light-employee-manager/issues">Report Bug</a>
     ·
-    <a href="https://github.com/topcowmoo/fluffy-disco-note-taker/issues">Request Feature</a>
+    <a href="https://github.com/topcowmoo/light-employee-manager/issues">Request Feature</a>
   </p>
 </div>
 
@@ -106,7 +106,7 @@ Don't forget to give the project a star! Thanks again!
 
 - Salvatore Mammoliti - [@github_username](https://github.com/topcowmoo) - mammoliti.sam@gmail.com
 
-Project Link: [https://github.com/topcowmoo/fluffy-disco-note-taker](https://github.com/topcowmoo/fluffy-disco-note-taker)
+-  Project Link: [https://github.com/topcowmoo/fluffy-disco-note-taker](https://github.com/topcowmoo/fluffy-disco-note-taker)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
