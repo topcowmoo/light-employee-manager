@@ -2,9 +2,11 @@
 const express = require('express');
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
+const displayTitle = require('./title');
+
 
 const PORT = process.env.PORT || 3001;
-const app = expresss();
+const app = express();
 
 // Express middleware
 app.use(express.urlencoded({ extend: false }));
@@ -20,6 +22,11 @@ const db = mysql.createConnection(
     },
     console.log(`Connected to the employee_manager_db database.`)
 );
+
+// Display cfont style title before questions
+displayTitle();
+
+
 
 
 
