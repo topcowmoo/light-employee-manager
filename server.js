@@ -7,20 +7,20 @@ const displayTitle = require("./title");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-// Express middleware
-app.use(express.urlencoded({ extend: false }));
-app.use(express.json());
-
 // Connect to db
 const db = mysql.createConnection(
   {
     host: "localhost",
     user: "root",
-    password: "process.env.DB_PASSWORD",
+    port: "3306",
+    password: "z8DC2h@K#uZwMab$8MCc",
     database: "employee_manager_db",
   },
   console.log(`Connected to the employee_manager_db database.`)
 );
+
+
+
 
 // Display cfont style title before questions
 displayTitle();
