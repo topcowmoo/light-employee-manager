@@ -16,7 +16,7 @@ const db = mysql.createConnection(
   {
     host: "localhost",
     user: "root",
-    password: "",
+    password: "process.env.DB_PASSWORD",
     database: "employee_manager_db",
   },
   console.log(`Connected to the employee_manager_db database.`)
@@ -30,7 +30,7 @@ displayTitle();
 const questions = [
   {
     type: "checkbox",
-    name: "where_go",
+    name: "choices",
     message: "What would you like to do?",
     choices: [
       "View All Departments",
