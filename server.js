@@ -18,6 +18,11 @@ const db = mysql.createConnection(
   console.log(`Connected to the employee_manager_db database.`)
 );
 
+db.connect((err) => {
+  if (err) throw err;
+  console.log("Successfully connected to database");
+})
+
 // Display cfont style title before questions
 displayTitle();
 
