@@ -1,8 +1,6 @@
-have to finish About the project
-
 <br />
 <div align="center">
-  <a href="https://github.com/topcowmoo/fluffy-disco-note-taker">
+  <a href="https://github.com/topcowmoo/light-employee-manager">
     <img src="./assets/SMfavicon-32x32.png" alt="Logo" width="70" height="70">
   </a>
 
@@ -13,7 +11,7 @@ have to finish About the project
 
 To see how it works please view my demo here......
 <br />
-<a href="https://github.com/topcowmoo/fluffy-disco-note-taker"><strong>Explore the docs »</strong></a>
+<a href="https://github.com/topcowmoo/light-employee-manager"><strong>Explore the docs »</strong></a>
 <br />
 <br />
 <!-- <a href="https://pacific-basin-11264-4d339f96ea1b.herokuapp.com/">Link to Deployed app on Heroku</a> -->
@@ -69,17 +67,17 @@ db.json file showing saved notes each with unique ID's:
 ## Built With
 
 <div style="display: flex; justify-content: flex-start;">
-  <img src="./assets/javascript.png" alt="Alt text" width="75" height="75" style="margin-right: 5px;">
+  <img src="./assets/javascript.png" alt="Alt text" width="50" height="50" style="margin-right: 5px;">
   <img src="./assets/mysql-original-wordmark.png" alt="Alt text" width="50" height="50" style="margin-right: 10px;">
-  <img src="./assets/nodejs.png" alt="Alt text" width="50" height="50" style="margin-right: 10px;">
-  <img src="./assets/iterm2.png" alt="Alt text" width="50" height="50;">
+  <img src="./assets/nodejs.png" alt="Alt text" width="50" height="40" style="margin-right: 10px;">
+  <img src="./assets/iterm2.png" alt="Alt text" width="40" height="40;">
 </div>
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/topcowmoo/fluffy-disco-note-taker
+   git clone https://github.com/topcowmoo/light-employee-manager
    ```
 2. Install NPM packages
    ````sh
@@ -115,7 +113,7 @@ Don't forget to give the project a star! Thanks again!
 
 - Salvatore Mammoliti - [@github_username](https://github.com/topcowmoo) - mammoliti.sam@gmail.com
 
-- Project Link: [https://github.com/topcowmoo/fluffy-disco-note-taker](https://github.com/topcowmoo/fluffy-disco-note-taker)
+- Project Link: [https://github.com/topcowmoo/light-employee-manager](https://github.com/topcowmoo/light-employee-manager)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,3 +134,8 @@ Don't forget to give the project a star! Thanks again!
 ![GitHub language stats](https://img.shields.io/github/languages/top/topcowmoo/light-employee-manager)
 
 ![Languages](https://img.shields.io/github/languages/count/topcowmoo/light-employee-manager)
+
+
+
+
+fix back to top and insert about the project and fix the space between about the project and report issue etc
