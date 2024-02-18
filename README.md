@@ -1,9 +1,5 @@
 have to finish About the project
 
-
-
-
-
 <br />
 <div align="center">
   <a href="https://github.com/topcowmoo/fluffy-disco-note-taker">
@@ -13,18 +9,19 @@ have to finish About the project
 <h3 align="center">Light Employee Manager</h3>
 
   <p align="center">
-   Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called content management systems (CMS). Light Employee Manger is a command-line application that manages a company's employee database, using Node.js, Inquirer, and MySQL. 
+   Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called content management systems (CMS). Light Employee Manger is a command-line application that manages a company's employee database, using Node.js, Inquirer, and MySQL.
 
-   To see how it works please view my demo here......
-    <br />
-    <a href="https://github.com/topcowmoo/fluffy-disco-note-taker"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <!-- <a href="https://pacific-basin-11264-4d339f96ea1b.herokuapp.com/">Link to Deployed app on Heroku</a> -->
-    ·
-    <a href="https://github.com/topcowmoo/light-employee-manager/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/topcowmoo/light-employee-manager/issues">Request Feature</a>
+To see how it works please view my demo here......
+<br />
+<a href="https://github.com/topcowmoo/fluffy-disco-note-taker"><strong>Explore the docs »</strong></a>
+<br />
+<br />
+<!-- <a href="https://pacific-basin-11264-4d339f96ea1b.herokuapp.com/">Link to Deployed app on Heroku</a> -->
+·
+<a href="https://github.com/topcowmoo/light-employee-manager/issues">Report Bug</a>
+·
+<a href="https://github.com/topcowmoo/light-employee-manager/issues">Request Feature</a>
+
   </p>
 </div>
 
@@ -71,12 +68,12 @@ db.json file showing saved notes each with unique ID's:
 
 ## Built With
 
-<a href="HTML-url">
-  <img src="./assets/javascript.png" alt="Alt text" width="50" height="50">
-  <img src="./assets/mysql-original-wordmark.png" alt="Alt text" width="50" height="50">
-  <img src="./assets/nodejs.png" alt="Alt text" width="50" height="50">
-  <img src="./assets/iterm2.png" alt="Alt text" width="50" height="50">
-</a>
+<div style="display: flex; justify-content: flex-start;">
+  <img src="./assets/javascript.png" alt="Alt text" width="75" height="75" style="margin-right: 5px;">
+  <img src="./assets/mysql-original-wordmark.png" alt="Alt text" width="50" height="50" style="margin-right: 10px;">
+  <img src="./assets/nodejs.png" alt="Alt text" width="50" height="50" style="margin-right: 10px;">
+  <img src="./assets/iterm2.png" alt="Alt text" width="50" height="50;">
+</div>
 
 ### Installation
 
@@ -118,7 +115,7 @@ Don't forget to give the project a star! Thanks again!
 
 - Salvatore Mammoliti - [@github_username](https://github.com/topcowmoo) - mammoliti.sam@gmail.com
 
--  Project Link: [https://github.com/topcowmoo/fluffy-disco-note-taker](https://github.com/topcowmoo/fluffy-disco-note-taker)
+- Project Link: [https://github.com/topcowmoo/fluffy-disco-note-taker](https://github.com/topcowmoo/fluffy-disco-note-taker)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
