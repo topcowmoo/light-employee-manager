@@ -1,3 +1,4 @@
+// Import dependency
 const cfonts = require("cfonts");
 
 function displayTitle() {

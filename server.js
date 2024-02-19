@@ -18,12 +18,7 @@ const db = mysql.createConnection(
   console.log(`Connected to the employee_manager_db database.`)
 );
 
-// db.connect((err) => {
-//   if (err) throw err;
-//   console.log("Successfully connected to database");
-
-// });
-
+// Function to call title from title.js
 function init() {
   displayTitle();
 }
@@ -32,8 +27,6 @@ init();
 
 // Define promptQuestions function
 const promptQuestions = async () => {
-  // Display cfont style title before questions
-
   await inquirer
     .prompt([
       {
@@ -62,7 +55,7 @@ const promptQuestions = async () => {
     .then((answers) => {
       const { choices } = answers;
 
-      console.log("Choice Selected:", choices); // Add this line for logging
+      console.log("Choice Selected:", choices);
 
       // Execute appropriate function based on user's choice
       switch (choices) {
@@ -125,8 +118,6 @@ const showDepartment = () => {
 
   db.query(sql, (err, rows) => {
     if (err) {
-      console.error("Error viewing departments:", err); // Add this line for error logging
-      throw err;
     }
     console.table(rows);
     promptQuestions(); // Call promptQuestions here after displaying departments
@@ -369,8 +360,6 @@ const addEmployee = () => {
                       throw err;
                     }
                     console.log("Employee has been added!");
-
-                    
                   });
                   showEmployee();
                 });
@@ -446,8 +435,6 @@ const updateEmployee = () => {
                   throw err;
                 }
                 console.log("Employee has been updated!");
-
-
               });
               showEmployee();
             });
@@ -522,7 +509,6 @@ const updateManager = () => {
                   throw err;
                 }
                 console.log("Employee has been updated!");
-
               });
               showEmployee();
             });
@@ -661,7 +647,6 @@ const deleteEmployee = () => {
             throw err;
           }
           console.log("Successfully Deleted!");
-
         });
         showEmployee();
       });
