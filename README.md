@@ -47,7 +47,7 @@ To see how it works please view my demo here......
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-<a name="about-the-project"></a>
+
 A command-line application that manages a company's employee database. It uses Node.js, Inquirer, and MySQL.
 
 Terminal after npm start is run:
@@ -70,10 +70,8 @@ Viewing department budgets:
 
 ![image](https://github.com/topcowmoo/light-employee-manager/assets/149528212/8d94a0b8-372b-4e02-a17d-695e65abca87)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Built With
-<a name="built-with"></a>
+
 <div style="display: flex; justify-content: flex-start;">
   <img src="./assets/javascript.png" alt="Alt text" width="50" height="50" style="margin-right: 5px;">
   <img src="./assets/mysql-original-wordmark.png" alt="Alt text" width="50" height="50" style="margin-right: 10px;">
@@ -82,7 +80,7 @@ Viewing department budgets:
 </div>
 
 ### Installation
-<a name="installation"></a>
+
 1. Clone the repo
    ```sh
    git clone https://github.com/topcowmoo/light-employee-manager
@@ -96,12 +94,10 @@ Viewing department budgets:
    npm start   ```
    ````
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTRIBUTING -->
 
 ## Contributing
-<a name="contributing"></a>
+
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
@@ -113,29 +109,23 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTACT -->
 
 ## Contact
-<a name="contact"></a>
+
 - Salvatore Mammoliti - [@github_username](https://github.com/topcowmoo) - mammoliti.sam@gmail.com
 
 - Project Link: [https://github.com/topcowmoo/light-employee-manager](https://github.com/topcowmoo/light-employee-manager)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgments
-<a name="acknowledgments"></a>
+
 - [ChatGPT](https://chat.openai.com/)
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
 - [Iconduck](https://iconduck.com/)
 - [Shields.io](https://shields.io/)
 - [MySQL](https://dev.mysql.com/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
