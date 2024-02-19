@@ -18,25 +18,26 @@ const db = mysql.createConnection(
   console.log(`Connected to the employee_manager_db database.`)
 );
 
-db.connect((err) => {
-  if (err) throw err;
-  console.log("Successfully connected to database");
+// db.connect((err) => {
+//   if (err) throw err;
+//   console.log("Successfully connected to database");
 
+// });
 
+function init() {
+  displayTitle();
+}
 
-// Display cfont style title before questions
-displayTitle();
-
-  // Call promptQuestions after successful database connection
-  promptQuestions();
-});
+init();
 
 // Define promptQuestions function
-const promptQuestions = () => {
-  inquirer
+const promptQuestions = async () => {
+  // Display cfont style title before questions
+
+  await inquirer
     .prompt([
       {
-        type: "checkbox",
+        type: "list",
         name: "choices",
         message: "What would you like to do?",
         choices: [
@@ -64,7 +65,7 @@ const promptQuestions = () => {
       console.log("Choice Selected:", choices); // Add this line for logging
 
       // Execute appropriate function based on user's choice
-      switch (choices[0]) {
+      switch (choices) {
         case "View all departments":
           showDepartment();
           break;
@@ -122,7 +123,7 @@ const showDepartment = () => {
   console.log("Viewing all Departments...\n");
   const sql = `SELECT department.id AS id, department.name AS department FROM department`;
 
-  db.promise().query(sql, (err, rows) => {
+  db.query(sql, (err, rows) => {
     if (err) {
       console.error("Error viewing departments:", err); // Add this line for error logging
       throw err;
@@ -137,7 +138,7 @@ const showRole = () => {
   console.log("Viewing all Roles...\n");
   const sql = `SELECT role.id, role.title, department.name AS department FROM role INNER JOIN department ON role.department_id = department.id`;
 
-  db.promise().query(sql, (err, rows) => {
+  db.query(sql, (err, rows) => {
     if (err) {
       console.error("Error viewing roles:", err);
       throw err;
@@ -162,7 +163,7 @@ const showEmployee = () => {
                       LEFT JOIN department ON role.department_id = department.id
                       LEFT JOIN employee manager ON employee.manager_id = manager.id`;
 
-  db.promise().query(sql, (err, rows) => {
+  db.query(sql, (err, rows) => {
     if (err) {
       console.error("Error viewing employees:", err);
       throw err;
@@ -199,9 +200,8 @@ const addDepartment = () => {
           throw err;
         }
         console.log("Added " + answer.addDept + " to departments!");
-
-        showDepartments();
       });
+      showDepartment();
     });
 };
 
@@ -241,7 +241,7 @@ const addRole = () => {
 
       const roleSql = `SELECT name, id FROM department`;
 
-      db.promise().query(roleSql, (err, data) => {
+      db.query(roleSql, (err, data) => {
         if (err) {
           console.error("Error fetching departments:", err);
           throw err;
@@ -271,9 +271,8 @@ const addRole = () => {
                 throw err;
               }
               console.log("Added " + answer.role + " to roles!");
-
-              showRoles();
             });
+            showRole();
           });
       });
     });
@@ -314,7 +313,7 @@ const addEmployee = () => {
 
       const roleSql = `SELECT role.id, role.title FROM role`;
 
-      db.promise().query(roleSql, (err, data) => {
+      db.query(roleSql, (err, data) => {
         if (err) {
           console.error("Error fetching roles:", err);
           throw err;
@@ -337,7 +336,7 @@ const addEmployee = () => {
 
             const managerSql = `SELECT * FROM employee`;
 
-            db.promise().query(managerSql, (err, data) => {
+            db.query(managerSql, (err, data) => {
               if (err) {
                 console.error("Error fetching managers:", err);
                 throw err;
@@ -371,8 +370,9 @@ const addEmployee = () => {
                     }
                     console.log("Employee has been added!");
 
-                    showEmployees();
+                    
                   });
+                  showEmployee();
                 });
             });
           });
@@ -384,7 +384,7 @@ const addEmployee = () => {
 const updateEmployee = () => {
   const employeeSql = `SELECT * FROM employee`;
 
-  db.promise().query(employeeSql, (err, data) => {
+  db.query(employeeSql, (err, data) => {
     if (err) {
       console.error("Error fetching employees:", err);
       throw err;
@@ -410,7 +410,7 @@ const updateEmployee = () => {
 
         const roleSql = `SELECT * FROM role`;
 
-        db.promise().query(roleSql, (err, data) => {
+        db.query(roleSql, (err, data) => {
           if (err) {
             console.error("Error fetching roles:", err);
             throw err;
@@ -447,8 +447,9 @@ const updateEmployee = () => {
                 }
                 console.log("Employee has been updated!");
 
-                showEmployees();
+
               });
+              showEmployee();
             });
         });
       });
@@ -459,7 +460,7 @@ const updateEmployee = () => {
 const updateManager = () => {
   const employeeSql = `SELECT * FROM employee`;
 
-  db.promise().query(employeeSql, (err, data) => {
+  db.query(employeeSql, (err, data) => {
     if (err) {
       console.error("Error fetching employees:", err);
       throw err;
@@ -485,7 +486,7 @@ const updateManager = () => {
 
         const managerSql = `SELECT * FROM employee`;
 
-        db.promise().query(managerSql, (err, data) => {
+        db.query(managerSql, (err, data) => {
           if (err) {
             console.error("Error fetching managers:", err);
             throw err;
@@ -522,8 +523,8 @@ const updateManager = () => {
                 }
                 console.log("Employee has been updated!");
 
-                showEmployees();
               });
+              showEmployee();
             });
         });
       });
@@ -540,7 +541,7 @@ const employeeDepartment = () => {
                LEFT JOIN role ON employee.role_id = role.id 
                LEFT JOIN department ON role.department_id = department.id`;
 
-  db.promise().query(sql, (err, rows) => {
+  db.query(sql, (err, rows) => {
     if (err) {
       console.error("Error viewing employees by department:", err);
       throw err;
@@ -554,7 +555,7 @@ const employeeDepartment = () => {
 const deleteDepartment = () => {
   const deptSql = `SELECT * FROM department`;
 
-  db.promise().query(deptSql, (err, data) => {
+  db.query(deptSql, (err, data) => {
     if (err) {
       console.error("Error fetching departments:", err);
       throw err;
@@ -582,7 +583,7 @@ const deleteDepartment = () => {
           }
           console.log("Successfully deleted!");
 
-          showDepartments();
+          showDepartment();
         });
       });
   });
@@ -592,7 +593,7 @@ const deleteDepartment = () => {
 const deleteRole = () => {
   const roleSql = `SELECT * FROM role`;
 
-  db.promise().query(roleSql, (err, data) => {
+  db.query(roleSql, (err, data) => {
     if (err) {
       console.error("Error fetching roles:", err);
       throw err;
@@ -619,9 +620,8 @@ const deleteRole = () => {
             throw err;
           }
           console.log("Successfully deleted!");
-
-          showRoles();
         });
+        showRole();
       });
   });
 };
@@ -630,7 +630,7 @@ const deleteRole = () => {
 const deleteEmployee = () => {
   const employeeSql = `SELECT * FROM employee`;
 
-  db.promise().query(employeeSql, (err, data) => {
+  db.query(employeeSql, (err, data) => {
     if (err) {
       console.error("Error fetching employees:", err);
       throw err;
@@ -662,8 +662,8 @@ const deleteEmployee = () => {
           }
           console.log("Successfully Deleted!");
 
-          showEmployees();
         });
+        showEmployee();
       });
   });
 };
@@ -678,7 +678,7 @@ const viewBudget = () => {
                FROM  role  
                JOIN department ON role.department_id = department.id GROUP BY  department_id`;
 
-  db.promise().query(sql, (err, rows) => {
+  db.query(sql, (err, rows) => {
     if (err) {
       console.error("Error viewing department budget:", err);
       throw err;
@@ -689,15 +689,8 @@ const viewBudget = () => {
   });
 };
 
-// Call promptQuestions function after connecting to the database
-db.connect((err) => {
-  if (err) throw err;
-  console.log("Successfully connected to database");
-
-  // Display title and prompt questions after successful database connection
-  displayTitle();
-  promptQuestions();
-});
+// Call promptQuestions after successful database connection
+promptQuestions();
 
 // Export the db connection for testing purposes
 module.exports = db;
