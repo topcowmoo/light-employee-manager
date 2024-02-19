@@ -9,7 +9,9 @@
   <p align="center">
    Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called content management systems (CMS). Light Employee Manger is a command-line application that manages a company's employee database, using Node.js, Inquirer, and MySQL.
 
-To see how it works please view my demo here......
+To see how it works please view my demo:
+
+https://drive.google.com/file/d/1oSwtuzCqikUOLJWFxbwRfcQC4jHJNJuS/view?usp=sharing
 
 <br />
 <a href="https://github.com/topcowmoo/light-employee-manager"><strong>Explore the docs »</strong></a>
