@@ -14,7 +14,9 @@ To see how it works please view my demo here......
 <a href="https://github.com/topcowmoo/light-employee-manager"><strong>Explore the docs »</strong></a>
 <br />
 <br />
+
 <!-- <a href="https://pacific-basin-11264-4d339f96ea1b.herokuapp.com/">Link to Deployed app on Heroku</a> -->
+
 ·
 <a href="https://github.com/topcowmoo/light-employee-manager/issues">Report Bug</a>
 ·
@@ -48,21 +50,25 @@ To see how it works please view my demo here......
 
 A command-line application that manages a company's employee database. It uses Node.js, Inquirer, and MySQL.
 
-Landing page:
+Terminal after npm start is run:
 
-![image](https://github.com/topcowmoo/fluffy-disco-note-taker/assets/149528212/710c02b8-5ca9-414b-be6c-df19fb7b6118)
+![image](https://github.com/topcowmoo/light-employee-manager/assets/149528212/a061e4be-fb34-4178-a17e-d31cd4d52b3f)
 
-Retrieve saved notes:
+Viewing all employees:
 
-![image](https://github.com/topcowmoo/fluffy-disco-note-taker/assets/149528212/08364672-5017-4f93-bcab-81572fa2fc77)
+![image](https://github.com/topcowmoo/light-employee-manager/assets/149528212/1eb0d095-2e65-4e54-8933-81318e078f51)
 
-Add a new note with Save and Clear Buttons present:
+Viewing all roles:
 
-![image](https://github.com/topcowmoo/fluffy-disco-note-taker/assets/149528212/fd3ba555-1aeb-4db3-961b-93d9649a6dfa)
+![image](https://github.com/topcowmoo/light-employee-manager/assets/149528212/66f945da-a729-4285-9ac7-78485a51de98)
 
-db.json file showing saved notes each with unique ID's:
+Viewing employees by department:
 
-![image](https://github.com/topcowmoo/fluffy-disco-note-taker/assets/149528212/719a7feb-9c5d-469e-ab02-8ad5a3542018)
+![image](https://github.com/topcowmoo/light-employee-manager/assets/149528212/36cec9f5-70ca-404e-b017-0a5187feeb68)
+
+Viewing department budgets:
+
+![image](https://github.com/topcowmoo/light-employee-manager/assets/149528212/8d94a0b8-372b-4e02-a17d-695e65abca87)
 
 ## Built With
 
@@ -134,8 +140,5 @@ Don't forget to give the project a star! Thanks again!
 ![GitHub language stats](https://img.shields.io/github/languages/top/topcowmoo/light-employee-manager)
 
 ![Languages](https://img.shields.io/github/languages/count/topcowmoo/light-employee-manager)
-
-
-
 
 fix back to top and insert about the project and fix the space between about the project and report issue etc
